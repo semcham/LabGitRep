@@ -7,7 +7,7 @@ b) Crea una función llamada los países más poblados. Debería devolver los 10
 
 
 # Importamos los datos desde Countries_data.py
-from Countries_data import countries
+from Countries_data.py import countries
 
 # Definemos la función para obtener los idiomas más hablados en el mundo
 def los_idiomas_mas_hablados(n=10 ):
