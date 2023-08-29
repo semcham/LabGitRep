@@ -24,3 +24,51 @@ ejemplo:
 """
 import sys
 print("Rutas de búsqueda para módulos:", sys.path)
+
+"""  
+3)'sys.stdin', 'sys.stdout', y 'sys.stderr': Estas son variables que representan las corrientes de entrada estándar, salida
+ estándar y salida de errores estándar, respectivamente. Puedes redirigir estas corrientes 
+ si es necesario para cambiar dónde se imprimen los datos.
+ """
+
+"""  
+4)'sys.platform': Esta variable proporciona información sobre la plataforma subyacente en la que 
+se ejecuta Python, como "win32" para Windows, "linux" para Linux, etc.
+ejemplo:
+"""
+import sys
+print("Plataforma actual:", sys.platform)
+
+"""
+5)'sys.version': Esta variable contiene una cadena que describe la versión de Python que se está ejecutando.
+ejemplo:
+"""
+import sys
+print("Versión de Python:", sys.version)
+
+"""
+6)'sys.exit()': Esta función se utiliza para salir de un programa Python con un código 
+de estado específico. Por ejemplo, sys.exit(0)indica una salida 
+exitosa, mientras que sys.exit(1)indica una salida con un error.
+ejemplo:
+"""
+import sys
+
+if algo_salio_mal:
+    sys.exit(1)  # Salir con un código de error
+else:
+    sys.exit(0)  # Salir con éxito
+
+"""
+7)'sys.getsizeof(object)': Esta función devuelve el tamaño en bytes de un objeto en memoria.
+ejemplo:
+"""
+import sys
+my_list = [1, 2, 3, 4, 5]
+print("Tamaño de la lista en bytes:", sys.getsizeof(my_list))
+"""
+8)'sys.maxsize': Esta variable proporciona el valor máximo que puede tener un objeto de tipo entero en la plataforma actual.
+ejemplo:
+"""
+import sys
+print("Valor máximo para enteros:", sys.maxsize)
